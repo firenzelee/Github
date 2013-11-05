@@ -215,8 +215,8 @@ run;
       subgroup = 0;
        if _n_ > 1 then do; 
         label = "    "||propcase(&varname);
-	    subgroup = 1;
-	   end;
+        subgroup = 1;
+       end;
   run;
 
   data results;
@@ -286,17 +286,17 @@ proc report data = final nowindows spacing=0 headskip missing split = "|"
     define pvalue   / display style=[just=center]" |P-value^{super **}"; 
 
     compute before groups;
-   	  line "  ";
+      line "  ";
     endcomp;
 
     compute label;
-	  if (subgroup ^= 0) then
-	  call define('label', 'style', "style=[pretext='\ql\li180 ' protectspecialchars=off]");
+      if (subgroup ^= 0) then
+      call define('label', 'style', "style=[pretext='\ql\li180 ' protectspecialchars=off]");
     endcomp;  
 
     compute after / style=[just=left font_face=Courier font_size=8pt];
-	  line @1 '______________________________________________________________________________________________';
-	  line ' ';
+      line @1 '______________________________________________________________________________________________';
+      line ' ';
       line @1 '* Intent to treat population includes all randomized patients who take at least one dose of study drug, 
 and have baseline and at least one post-baseline efficacy measurement.';
 	  line ' ';
