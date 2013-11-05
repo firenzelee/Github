@@ -1,9 +1,9 @@
 /*====================================================================
 PROJECT       : BANCOVA2013
-PROGRAM       : L_01_DemogTable_RoseLi.SAS
-PROGRAMMER(S) : Rose Li
+PROGRAM       : L_01_DemogTable_RongLi.SAS
+PROGRAMMER(S) : Rong Li
 PURPOSE       : Produce a data listing			
-AUTHOR        : Rose Li
+AUTHOR        : Rong Li
 DATE          : 11/04/2013
 QC PROGRAMMER : John Zhang
 QC Date       : 
@@ -45,7 +45,7 @@ OPTION nodate nocenter LS=80 ps=1000;
 %let root=C:\Users\Peng\Desktop\Bancova;
 %let outputs=&root.\Week3\HW3\outputs;
 %let infile = derived.demog_data;  
-%let exfile = &root.\Week3 - Demographic\HW3\outputs\L_01_Demog_RoseLi.rtf;
+%let exfile = &root.\Week3 - Demographic\HW3\outputs\L_01_Demog_RongLi.rtf;
 
 libname raw "&root.\Week3 - Demographic\HW3\raw";
 libname derived "&root.\Week3 - Demographic\HW3\derived";
