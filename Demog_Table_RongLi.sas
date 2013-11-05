@@ -299,7 +299,7 @@ proc report data = final nowindows spacing=0 headskip missing split = "|"
       line ' ';
       line @1 '* Intent to treat population includes all randomized patients who take at least one dose of study drug, 
 and have baseline and at least one post-baseline efficacy measurement.';
-	  line ' ';
+      line ' ';
       line @1 "** P-values are obtained from the following methods: Age, Height, Weight, BMI = Wilcoxon rank-sum test; Gender, Race = Fisher's exact test.";
     endcomp;
 
