@@ -270,7 +270,7 @@ footnote;
 ods escapechar='^';
 options  nonumber nodate center  missing=" ";
 
-ods rtf file="&exfile" style=bancova;
+ods rtf file="&exfile" style=minimal;
 
 proc report data = final nowindows spacing=0 headskip missing split = "|"
     style(report)=[frame=above rules=groups cellspacing=3 cellpadding=0 ]
