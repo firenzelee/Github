@@ -1,11 +1,11 @@
 /*====================================================================
-PROJECT       : BANCOVA2013
+PROJECT       : DM
 PROGRAM       : T_01_DemogTable_RongLi.SAS
 PROGRAMMER(S) : Rong Li
 PURPOSE       : Create a demographic table			
 AUTHOR        : Rong Li
-DATE          : 10/17/2013
-QC PROGRAMMER : John Zhang
+DATE          : 
+QC PROGRAMMER : 
 QC Date       : 
 DATA          :  
 OUTPUT DIR    :
@@ -45,7 +45,7 @@ OPTION nodate nocenter LS=80 ps=1000;
 **************************************************************************************;
 
 
-%let root=C:\Users\Peng\Desktop\Bancova;
+%let root=C:\Users\Peng\Desktop\DM;
 %let outputs=&root.\Week3\HW3\outputs;
 %let infile = derived.demog_data;  
 %let exfile = &root.\Week3 - Demographic\HW3\outputs\T_01_DemogTable_RongLi_Download_Open_in_Word.rtf;
